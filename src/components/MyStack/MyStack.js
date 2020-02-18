@@ -1,14 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  CardDeck,
-  ListGroup,
-  ListGroupItem
-} from 'react-bootstrap';
+import { Browser } from 'styled-icons/octicons';
+import { Server, Tools } from 'styled-icons/fa-solid';
+import Slide from 'react-reveal/Slide';
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -20,68 +14,113 @@ const Wrapper = styled.div`
     url('/img/main.jpg');
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(50% 0, 100% 15%, 100% 85%, 50% 100%, 0 100%, 0 0);
-  clip-path: polygon(50% 0, 100% 15%, 100% 85%, 50% 100%, 0 100%, 0 0);
+
+  clip-path: polygon(0 15vh, 100% 0, 100% 85vh, 0 100%);
 
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
+const BrowserIcon = styled(Browser)`
+  margin: 0 auto 1rem auto;
+`;
+
+const ServerIcon = styled(Server)`
+  margin: 0 auto 1rem auto;
+`;
+
+const ToolsIcon = styled(Tools)`
+  margin: 0 auto 1rem auto;
+`;
+
+const BoxWrapper = styled.div`
+  width: 25%;
+`;
+const StackBox = styled.div`
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #000;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+`;
+
+const BoxHeading = styled.h3`
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+`;
+
+const BoxContent = styled.ul`
+  list-style: none;
+  padding: 0;
+`;
+const BoxItem = styled.li`
+  display: block;
+  text-align: center;
+  padding: 0.7rem;
+  border-bottom: 1px solid #999;
+  color: #000;
+`;
+
 const MyStack = () => {
   return (
-    <Container style={{ padding: 0 }} fluid>
-      <Wrapper>
-        <Row>
-          <Col>
-            <CardDeck>
-              <Card>
-                <Card.Img variant='top' src='holder.js/100px160' />
-                <Card.Body>
-                  <Card.Title>Front-End</Card.Title>
+    <Wrapper>
+      <BoxWrapper>
+        <Slide left>
+          <StackBox>
+            <BrowserIcon size='50px' />
+            <BoxHeading>Front</BoxHeading>
+            <BoxContent>
+              <BoxItem>HTML 5</BoxItem>
+              <BoxItem>CSS 3 </BoxItem>
+              <BoxItem>JavaScript</BoxItem>
+              <BoxItem>ReactJS</BoxItem>
+            </BoxContent>
+          </StackBox>
+        </Slide>
+      </BoxWrapper>
 
-                  <ListGroup>
-                    <ListGroupItem>HTML 5</ListGroupItem>
-                    <ListGroupItem>CSS 3</ListGroupItem>
-                    <ListGroupItem>SASS</ListGroupItem>
-                    <ListGroupItem>Bootstrap</ListGroupItem>
-                    <ListGroupItem>React</ListGroupItem>
-                    <ListGroupItem>Styled Components</ListGroupItem>
-                  </ListGroup>
-                </Card.Body>
-              </Card>
-              <Card>
-                <Card.Img variant='top' src='holder.js/100px160' />
-                <Card.Body>
-                  <Card.Title>Back-End</Card.Title>
+      <BoxWrapper>
+        <Slide top>
+          <StackBox>
+            <ServerIcon size='50px' />
+            <BoxHeading>Back</BoxHeading>
+            <BoxContent>
+              <BoxItem>Node.JS</BoxItem>
+              <BoxItem>Express.JS</BoxItem>
+              <BoxItem>MongoDB</BoxItem>
+              <BoxItem>Mongoose</BoxItem>
+            </BoxContent>
+          </StackBox>
+        </Slide>
+      </BoxWrapper>
 
-                  <ListGroup>
-                    <ListGroupItem>Node.JS</ListGroupItem>
-                    <ListGroupItem>Express.JS</ListGroupItem>
-                    <ListGroupItem>MongoDB</ListGroupItem>
-                    <ListGroupItem>Mongoose</ListGroupItem>
-                  </ListGroup>
-                </Card.Body>
-              </Card>
-              <Card>
-                <Card.Img variant='top' src='holder.js/100px160' />
-                <Card.Body>
-                  <Card.Title>Deploiment/Versioning</Card.Title>
-
-                  <ListGroup>
-                    <ListGroupItem>
-                      Configuration de serveur dédié
-                    </ListGroupItem>
-                    <ListGroupItem>Git</ListGroupItem>
-                    <ListGroupItem>Google Cloud</ListGroupItem>
-                  </ListGroup>
-                </Card.Body>
-              </Card>
-            </CardDeck>
-          </Col>
-        </Row>
-      </Wrapper>
-    </Container>
+      <BoxWrapper>
+        <Slide right>
+          <StackBox>
+            <ToolsIcon size='50px' />
+            <BoxHeading>Divers</BoxHeading>
+            <BoxContent>
+              <BoxItem>Git</BoxItem>
+              <BoxItem>Trello</BoxItem>
+              <BoxItem>Methodes Agiles</BoxItem>
+              <BoxItem>Slack </BoxItem>
+            </BoxContent>
+          </StackBox>{' '}
+        </Slide>
+      </BoxWrapper>
+    </Wrapper>
   );
 };
 
