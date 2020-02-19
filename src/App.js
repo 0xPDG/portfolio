@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -11,6 +11,13 @@ import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
 const Body = styled.section`
   background-color: #171717;
+  background-image: linear-gradient(
+      167deg,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0.82) 100%
+    ),
+    url('/img/stars3.jpg');
+
   color: #fff;
   margin: 0;
   padding: 0;

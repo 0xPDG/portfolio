@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import Zoom from 'react-reveal/Zoom';
 import { FileDownload } from 'styled-icons/fa-solid';
@@ -27,14 +26,22 @@ const Presentation = styled.h2`
   text-transform: uppercase;
   font-size: 4rem;
   color: #fff;
+
   text-align: center;
   margin: 0 0 2rem 0;
   letter-spacing: 0.5rem;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 3rem;
+  }
 `;
 
 const Description = styled(Presentation)`
   font-size: 2.5rem;
   font-weight: 400;
+  color: #fff;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.75rem;
+  }
 `;
 
 const ResumeBtn = styled.a`
@@ -67,7 +74,11 @@ const Header = () => {
       </Zoom>
       <Zoom bottom>
         <Description>Développeur fullstack JavaScript</Description>
-        <ResumeBtn href='#'>
+        <ResumeBtn
+          href='https://drive.google.com/open?id=1NVP9zVA1irk4IdUDpsiVBORH78gyf0uG'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           CV <FileDownload size='15px' />
         </ResumeBtn>
       </Zoom>
