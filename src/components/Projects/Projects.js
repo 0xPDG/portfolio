@@ -113,7 +113,12 @@ const Projects = () => {
                   <BoxItem>Affichage dynamique de graphiques</BoxItem>
                   <BoxItem>Authentification à deux niveaux</BoxItem>
                 </BoxContent>
-                <Btn href='#'>Voir PDF</Btn>
+                <Btn
+                  href='https://drive.google.com/file/d/1BwLtZnjf9V2GzVdjqw9XRrrPZ9EO2ozm/view?usp=sharing'
+                  target='_blank'
+                >
+                  Voir PDF
+                </Btn>
               </StackBox>
             </Slide>
           </Col>
