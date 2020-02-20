@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Zoom from 'react-reveal/Zoom';
-import { FileDownload } from 'styled-icons/fa-solid';
+//import { FileDownload } from 'styled-icons/fa-solid';
 
 const Main = styled.header`
   min-height: 100vh;
@@ -44,18 +44,61 @@ const Description = styled(Presentation)`
   }
 `;
 
-const ResumeBtn = styled.a`
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid #fff;
-  border-radius: 1rem;
-  &:hover {
-    background-color: #0952eb;
-    text-decoration: none;
-    color: #fff;
+// const ResumeBtn = styled.a`
+//   color: #fff;
+//   text-decoration: none;
+//   padding: 0.5rem 1.5rem;
+//   border: 1px solid #fff;
+//   border-radius: 1rem;
+//   &:hover {
+//     background-color: #0952eb;
+//     text-decoration: none;
+//     color: #fff;
 
-    transition: all 0.5s ease;
+//     transition: all 0.5s ease;
+//   }
+// `;
+
+const Mouse = styled.div`
+  margin: 50px auto;
+  width: 100px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: none;
+  }
+`;
+const MouseIcon = styled.div`
+  width: 25px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+`;
+
+const MouseWheel = styled.span`
+  height: 6px;
+  margin: 2px auto 0;
+  display: block;
+  width: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: 1.6s ease infinite wheel-up-down;
+  @keyframes wheel-up-down {
+    0% {
+      margin-top: 2px;
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      margin-top: 20px;
+      opacity: 0;
+    }
   }
 `;
 
@@ -74,6 +117,11 @@ const Header = () => {
         >
           CV <FileDownload size='15px' />
         </ResumeBtn> */}
+        <Mouse>
+          <MouseIcon>
+            <MouseWheel></MouseWheel>
+          </MouseIcon>
+        </Mouse>
       </Zoom>
     </Main>
   );

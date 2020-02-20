@@ -39,7 +39,7 @@ const StackBox = styled.div`
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.4);
+
   transition: transform 0.3s;
   margin-left: 15px;
   margin-right: 15px;

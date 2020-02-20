@@ -14,7 +14,6 @@ const StackBox = styled.div`
   padding: 2.5rem;
   text-align: center;
   border-radius: 5px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
   color: #000;
   margin: 20px 15px 20px 15px;
@@ -63,6 +62,7 @@ const Presentation = styled.h2`
   color: #e5e5e5;
   @media (min-width: 320px) and (max-width: 480px) {
     font-size: 1.5rem;
+    padding: 0 1rem;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 2rem;
@@ -111,7 +111,7 @@ const Projects = () => {
                   <BoxItem>Traitement de fichier xlsx en JSON</BoxItem>
                   <BoxItem>Import/export de fichier xlsx</BoxItem>
                   <BoxItem>Affichage dynamique de graphiques</BoxItem>
-                  <BoxItem>Authentification a deux niveaux</BoxItem>
+                  <BoxItem>Authentification à deux niveaux</BoxItem>
                 </BoxContent>
                 <Btn href='#'>Voir PDF</Btn>
               </StackBox>
@@ -138,11 +138,11 @@ const Projects = () => {
                     Composants fonctionnels et utilisation des Hooks
                   </BoxItem>
                   <BoxItem>
-                    Gestion du state utilisateur coté client avec l'API de
+                    Gestion du state utilisateur côté client avec l'API de
                     Contexte
                   </BoxItem>
                   <BoxItem>
-                    Je travail sur le portage en application mobile en React
+                    Je travaille sur le portage en application mobile en React
                     Native
                   </BoxItem>
                 </BoxContent>

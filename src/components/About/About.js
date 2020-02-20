@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
 import Bounce from 'react-reveal/Bounce';
 
-const Heading = styled.h3`
+const Heading = styled.h2`
   text-align: center;
   color: #e5e5e5;
   margin: 3rem 0 2rem 0;
@@ -48,7 +48,7 @@ const About = () => {
             <Heading>Mon parcours</Heading>
             <Paragraph>
               Passionné d'informatique depuis le plus jeune âge, songeant depuis
-              quelques mois à me reconvertir j'ai commencé à m'auto former au
+              quelques mois à me reconvertir j'ai commencé à m'auto-former au
               développement web début 2019. En novembre 2019 j'ai sauté le pas
               et je me suis inscrit dans un bootcamp JavaScript.
             </Paragraph>
@@ -56,8 +56,7 @@ const About = () => {
             <Heading>Ma situation</Heading>
             <Paragraph>
               Actuellement à la recherche d'un poste de développeur JavaScript.
-              <br /> Je suis ouvert à tout types de postes
-              (front/back/fullstack)
+              <br /> Je suis ouvert à tout type de poste (front/back/fullstack)
             </Paragraph>
           </Bounce>
         </Col>
