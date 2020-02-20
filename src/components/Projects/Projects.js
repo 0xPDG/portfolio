@@ -16,11 +16,8 @@ const StackBox = styled.div`
   border-radius: 5px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
-  margin-left: 15px;
-  margin-right: 15px;
   color: #000;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 15px 20px 15px;
   transition: transform 0.3s ease;
   @media (min-width: 320px) and (max-width: 480px) {
     font-size: 1rem;
@@ -51,9 +48,10 @@ const BoxContent = styled.ul`
 const BoxItem = styled.li`
   display: block;
   text-align: center;
-  padding: 0.7rem;
+  padding: 0.8rem;
   border-bottom: 1px solid #999;
   color: #000;
+  font-size: 1.3rem;
 `;
 const Presentation = styled.h2`
   text-transform: uppercase;
@@ -78,7 +76,7 @@ const Btn = styled.a`
   background-color: #0952eb;
   color: #fff;
   font-size: 1rem;
-
+  margin: 0 0.5rem;
   &:hover {
     color: #fff;
     text-decoration: none;
@@ -93,7 +91,7 @@ const Projects = () => {
       </Slide>
 
       <Wrapper fluid>
-        <Row className='justify-content-center align-items-end'>
+        <Row className='justify-content-center align-items-start'>
           <Col xl={3} lg={8} md={8} sm={8} xs={12}>
             <Slide right>
               <StackBox>
@@ -105,7 +103,9 @@ const Projects = () => {
                 ></Image>
                 <BoxContent>
                   <BoxDescription>
-                    Réalisation d'un back-office pour la start-up DIBSTER
+                    Réalisation d'un back-office pour la start-up DIBSTER, pour
+                    des raisons de confidentialité je ne peux pas mettre en
+                    ligne le code source.
                   </BoxDescription>
                   <BoxItem>Stack MERN</BoxItem>
                   <BoxItem>Traitement de fichier xlsx en JSON</BoxItem>
@@ -113,6 +113,7 @@ const Projects = () => {
                   <BoxItem>Affichage dynamique de graphiques</BoxItem>
                   <BoxItem>Authentification a deux niveaux</BoxItem>
                 </BoxContent>
+                <Btn href='#'>Voir PDF</Btn>
               </StackBox>
             </Slide>
           </Col>
@@ -127,22 +128,31 @@ const Projects = () => {
                 ></Image>
                 <BoxContent>
                   <BoxDescription>
-                    Mon premier projet MERN, application "twitter like". Je
-                    travail sur le portage en appli mobile avec react native
+                    Mon premier projet MERN, application de réseau social
+                    "twitter like".
                   </BoxDescription>
                   <BoxItem>Stack MERN</BoxItem>
-                  <BoxItem>Authentification PassportJS/Express Session</BoxItem>
+                  <BoxItem>Authentification PassportJS</BoxItem>
 
                   <BoxItem>
-                    Composants fonctionnels et utlisation des Hooks
+                    Composants fonctionnels et utilisation des Hooks
+                  </BoxItem>
+                  <BoxItem>
+                    Gestion du state utilisateur coté client avec l'API de
+                    Contexte
+                  </BoxItem>
+                  <BoxItem>
+                    Je travail sur le portage en application mobile en React
+                    Native
                   </BoxItem>
                 </BoxContent>
                 <Btn
                   href='https://github.com/PGaujac/twipierre'
                   target='_blank'
                 >
-                  Voir le code
+                  Code
                 </Btn>
+                <Btn href='#'>Demo</Btn>
               </StackBox>
             </Slide>
           </Col>
@@ -158,16 +168,20 @@ const Projects = () => {
                 ></Image>
                 <BoxContent>
                   <BoxDescription>
-                    Mon premier projet ReactJS. Servi par une API web basé sur
-                    un serveur express et une base de données MongoDB
+                    Mon premier projet ReactJS. J'ai depuis mis en place une API
+                    web basé sur un serveur express et une base de données
+                    MongoDB.
                   </BoxDescription>
                   <BoxItem>Stack MERN</BoxItem>
-                  <BoxItem>Personalisation de pizza</BoxItem>
+                  <BoxItem>Personalisation de pizzas</BoxItem>
                   <BoxItem>Calcul dynamique de prix</BoxItem>
+                  <BoxItem>Formulaire "admin" pour l'ajout de pizzas</BoxItem>
+                  <BoxItem>Animations CSS</BoxItem>
                 </BoxContent>
                 <Btn href='https://github.com/PGaujac/pierrza' target='_blank'>
-                  Voir le code
+                  Code
                 </Btn>
+                <Btn href='#'>Demo</Btn>
               </StackBox>
             </Slide>
           </Col>

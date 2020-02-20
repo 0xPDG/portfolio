@@ -17,6 +17,7 @@ const FooterText = styled.p`
 
 const Wrapper = styled(Container)`
   min-height: 5vh;
+  padding: 2rem;
   background: linear-gradient(
     167deg,
     rgba(20, 27, 65, 0.8) 50%,
@@ -72,7 +73,7 @@ const Footer = () => {
           </a>
         </Col>
 
-        <Col xl={6} lg={6} md={6} sm={6} xs={6} className='align-self-end'>
+        <Col xl={6} lg={6} md={6} sm={6} xs={6} className='align-self-center'>
           <FooterText>Réalisation : Pierre de Gaujac.</FooterText>
         </Col>
       </Row>
