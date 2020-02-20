@@ -152,7 +152,6 @@ const Projects = () => {
                 >
                   Code
                 </Btn>
-                <Btn href='#'>Demo</Btn>
               </StackBox>
             </Slide>
           </Col>
@@ -181,7 +180,6 @@ const Projects = () => {
                 <Btn href='https://github.com/PGaujac/pierrza' target='_blank'>
                   Code
                 </Btn>
-                <Btn href='#'>Demo</Btn>
               </StackBox>
             </Slide>
           </Col>

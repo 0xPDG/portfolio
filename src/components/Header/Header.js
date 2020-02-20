@@ -59,13 +59,6 @@ const ResumeBtn = styled.a`
   }
 `;
 
-// const MyFileDownload = styled(FileDownload)`
-
-//   &:hover {
-//     display: block;
-//   }
-// `;
-
 const Header = () => {
   return (
     <Main>
@@ -74,13 +67,13 @@ const Header = () => {
       </Zoom>
       <Zoom bottom>
         <Description>Développeur fullstack JavaScript</Description>
-        <ResumeBtn
+        {/* <ResumeBtn
           href='https://drive.google.com/open?id=1NVP9zVA1irk4IdUDpsiVBORH78gyf0uG'
           target='_blank'
           rel='noopener noreferrer'
         >
           CV <FileDownload size='15px' />
-        </ResumeBtn>
+        </ResumeBtn> */}
       </Zoom>
     </Main>
   );

@@ -47,8 +47,8 @@ const About = () => {
           <Bounce left>
             <Heading>Mon parcours</Heading>
             <Paragraph>
-              Passioné d'informatique depuis le plus jeune age, songeant depuis
-              quelques mois a me reconvertir j'ai commencer à m'auto former au
+              Passionné d'informatique depuis le plus jeune âge, songeant depuis
+              quelques mois à me reconvertir j'ai commencé à m'auto former au
               développement web début 2019. En novembre 2019 j'ai sauté le pas
               et je me suis inscrit dans un bootcamp JavaScript.
             </Paragraph>
@@ -56,7 +56,8 @@ const About = () => {
             <Heading>Ma situation</Heading>
             <Paragraph>
               Actuellement à la recherche d'un poste de développeur JavaScript.
-              <br /> Je suis ouvert a tout types de poste (front/back/fullstack)
+              <br /> Je suis ouvert à tout types de postes
+              (front/back/fullstack)
             </Paragraph>
           </Bounce>
         </Col>
@@ -75,8 +76,6 @@ const About = () => {
             <Logo className='img-fluid' fluid src='/img/node.png' />
           </Bounce>
         </Col>
-
-        {/* <Logo className='img-fluid' fluid src='/img/mongo.png' /> */}
       </Row>
     </Container>
   );
