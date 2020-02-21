@@ -17,7 +17,7 @@ const Heading = styled.h2`
 
 const Paragraph = styled.p`
   color: #e5e5e5;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   padding: 2rem 3rem 2rem 3rem;
   @media (min-width: 320px) and (max-width: 480px) {
@@ -26,6 +26,11 @@ const Paragraph = styled.p`
   @media (min-width: 768px) and (max-width: 1024px) {
     padding: 1rem 1.5rem 2rem 1.5rem;
   }
+`;
+
+const ParagraphQuote = styled(Paragraph)`
+  font-style: italic;
+  padding: 3rem 0;
 `;
 
 const Logo = styled.img`
@@ -53,11 +58,10 @@ const About = () => {
               et je me suis inscrit dans un bootcamp JavaScript.
             </Paragraph>
 
-            <Heading>Ma situation</Heading>
-            <Paragraph>
-              Actuellement à la recherche d'un poste de développeur JavaScript.
-              <br /> Je suis ouvert à tout type de poste (front/back/fullstack)
-            </Paragraph>
+            <ParagraphQuote>
+              "Dynamique, je suis à la recherche de nouvelles opportunités et de
+              challenges"
+            </ParagraphQuote>
           </Bounce>
         </Col>
         <Col xs={4} md={2}>

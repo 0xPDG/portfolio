@@ -35,7 +35,7 @@ const ToolsIcon = styled(Tools)`
 
 const StackBox = styled.div`
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
@@ -61,6 +61,7 @@ const BoxHeading = styled.h3`
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
+  font-size: 1.4rem;
   color: #000;
 `;
 

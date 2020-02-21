@@ -31,6 +31,7 @@ const StackBox = styled.div`
 
 const BoxHeading = styled.h3`
   text-transform: uppercase;
+  font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
   color: #000;
@@ -38,6 +39,8 @@ const BoxHeading = styled.h3`
 
 const BoxDescription = styled.p`
   text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
 `;
 
 const BoxContent = styled.ul`
@@ -50,11 +53,11 @@ const BoxItem = styled.li`
   padding: 0.8rem;
   border-bottom: 1px solid #999;
   color: #000;
-  font-size: 1.3rem;
+  font-size: 1rem;
 `;
 const Presentation = styled.h2`
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 1.9rem;
   color: #fff;
   text-align: center;
   margin: 4rem 0 4rem 0;

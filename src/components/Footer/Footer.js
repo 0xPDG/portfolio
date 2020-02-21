@@ -65,7 +65,7 @@ const Footer = () => {
             <StyledLinkedin size='50px' />
           </a>
           <a
-            href='mailto:degaujacp@gmail.com'
+            href='mailto:hello@pierredegaujac.io'
             target='_blank'
             rel='noopener noreferrer'
           >

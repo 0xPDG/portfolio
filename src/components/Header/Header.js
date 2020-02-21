@@ -24,7 +24,7 @@ const Main = styled.header`
 
 const Presentation = styled.h2`
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #fff;
 
   text-align: center;
@@ -36,7 +36,7 @@ const Presentation = styled.h2`
 `;
 
 const Description = styled(Presentation)`
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #fff;
   @media (min-width: 320px) and (max-width: 480px) {
