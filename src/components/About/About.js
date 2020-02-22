@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
-import Bounce from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade';
 
 const Heading = styled.h2`
   text-align: center;
@@ -49,7 +49,7 @@ const About = () => {
     <Container style={{ padding: 0 }} fluid>
       <Row className='align-items-center'>
         <Col xs={12} md={6}>
-          <Bounce left>
+          <Fade cascade bottom>
             <Heading>Mon parcours</Heading>
             <Paragraph>
               Passionné d'informatique depuis le plus jeune âge, songeant depuis
@@ -62,22 +62,22 @@ const About = () => {
               "Dynamique, je suis à la recherche de nouvelles opportunités et de
               challenges"
             </ParagraphQuote>
-          </Bounce>
+          </Fade>
         </Col>
         <Col xs={4} md={2}>
-          <Bounce right>
+          <Fade delay={200} bottom>
             <Logo className='img-fluid' fluid src='/img/js.png' />
-          </Bounce>
+          </Fade>
         </Col>
         <Col xs={4} md={2}>
-          <Bounce right>
+          <Fade delay={600} bottom>
             <Logo className='img-fluid' fluid src='/img/react.png' />
-          </Bounce>
+          </Fade>
         </Col>
         <Col xs={4} md={2}>
-          <Bounce right>
+          <Fade delay={400} bottom>
             <Logo className='img-fluid' fluid src='/img/node.png' />
-          </Bounce>
+          </Fade>
         </Col>
       </Row>
     </Container>

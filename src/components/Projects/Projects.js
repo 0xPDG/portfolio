@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Image, Container, Row, Col } from 'react-bootstrap';
 
 import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 
 const Wrapper = styled(Container)`
   min-height: 100vh;
@@ -40,7 +41,7 @@ const BoxHeading = styled.h3`
 const BoxDescription = styled.p`
   text-align: center;
   font-size: 1.1rem;
-  font-weight: 600;
+  /* font-weight: 400; */
 `;
 
 const BoxContent = styled.ul`
@@ -56,15 +57,15 @@ const BoxItem = styled.li`
   font-size: 1rem;
 `;
 const Presentation = styled.h2`
-  text-transform: uppercase;
-  font-size: 1.9rem;
+  /* text-transform: uppercase; */
+  /* font-size: 1.9rem; */
   color: #fff;
   text-align: center;
   margin: 4rem 0 4rem 0;
-  letter-spacing: 0.5rem;
+  /* letter-spacing: 0.5rem; */
   color: #e5e5e5;
   @media (min-width: 320px) and (max-width: 480px) {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     padding: 0 1rem;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -89,14 +90,14 @@ const Btn = styled.a`
 const Projects = () => {
   return (
     <div>
-      <Slide top>
+      <Fade bottom cascade>
         <Presentation>Mes réalisations</Presentation>
-      </Slide>
+      </Fade>
 
       <Wrapper fluid>
         <Row className='justify-content-center align-items-start'>
           <Col xl={3} lg={8} md={8} sm={8} xs={12}>
-            <Slide right>
+            <Slide bottom>
               <StackBox>
                 <BoxHeading>DIBSTER DASHBOARD</BoxHeading>
                 <Image
@@ -109,12 +110,14 @@ const Projects = () => {
                     Réalisation d'un back-office pour la start-up DIBSTER, pour
                     des raisons de confidentialité je ne peux pas mettre en
                     ligne le code source.
-                  </BoxDescription>
-                  <BoxItem>Stack MERN</BoxItem>
-                  <BoxItem>Traitement de fichier xlsx en JSON</BoxItem>
-                  <BoxItem>Import/export de fichier xlsx</BoxItem>
-                  <BoxItem>Affichage dynamique de graphiques</BoxItem>
-                  <BoxItem>Authentification à deux niveaux</BoxItem>
+                  </BoxDescription>{' '}
+                  <Fade delay={300} top cascade>
+                    <BoxItem>Stack MERN</BoxItem>
+                    <BoxItem>Traitement de fichier xlsx en JSON</BoxItem>
+                    <BoxItem>Import/export de fichier xlsx</BoxItem>
+                    <BoxItem>Affichage dynamique de graphiques</BoxItem>
+                    <BoxItem>Authentification à deux niveaux</BoxItem>
+                  </Fade>
                 </BoxContent>
                 <Btn
                   href='https://drive.google.com/file/d/1BwLtZnjf9V2GzVdjqw9XRrrPZ9EO2ozm/view?usp=sharing'
@@ -126,7 +129,7 @@ const Projects = () => {
             </Slide>
           </Col>
           <Col xl={3} lg={8} md={8} sm={8} xs={12}>
-            <Slide right>
+            <Slide bottom>
               <StackBox>
                 <BoxHeading>Twipierre</BoxHeading>
                 <Image
@@ -139,20 +142,22 @@ const Projects = () => {
                     Mon premier projet MERN, application de réseau social
                     "twitter like".
                   </BoxDescription>
-                  <BoxItem>Stack MERN</BoxItem>
-                  <BoxItem>Authentification PassportJS</BoxItem>
+                  <Fade delay={300} top cascade>
+                    <BoxItem>Stack MERN</BoxItem>
+                    <BoxItem>Authentification PassportJS</BoxItem>
 
-                  <BoxItem>
-                    Composants fonctionnels et utilisation des Hooks
-                  </BoxItem>
-                  <BoxItem>
-                    Gestion du state utilisateur côté client avec l'API de
-                    Contexte
-                  </BoxItem>
-                  <BoxItem>
-                    Je travaille sur le portage en application mobile en React
-                    Native
-                  </BoxItem>
+                    <BoxItem>
+                      Composants fonctionnels et utilisation des Hooks
+                    </BoxItem>
+                    <BoxItem>
+                      Gestion du state utilisateur côté client avec l'API de
+                      Contexte
+                    </BoxItem>
+                    <BoxItem>
+                      Je travaille sur le portage en application mobile en React
+                      Native
+                    </BoxItem>
+                  </Fade>
                 </BoxContent>
                 <Btn
                   href='https://github.com/PGaujac/twipierre'
@@ -165,7 +170,7 @@ const Projects = () => {
           </Col>
 
           <Col xl={3} lg={8} md={8} sm={8} xs={12}>
-            <Slide right>
+            <Slide bottom>
               <StackBox className='h-100'>
                 <BoxHeading>La Pierrza</BoxHeading>
                 <Image
@@ -179,11 +184,13 @@ const Projects = () => {
                     web basé sur un serveur express et une base de données
                     MongoDB.
                   </BoxDescription>
-                  <BoxItem>Stack MERN</BoxItem>
-                  <BoxItem>Personalisation de pizzas</BoxItem>
-                  <BoxItem>Calcul dynamique de prix</BoxItem>
-                  <BoxItem>Formulaire "admin" pour l'ajout de pizzas</BoxItem>
-                  <BoxItem>Animations CSS</BoxItem>
+                  <Fade delay={300} top cascade>
+                    <BoxItem>Stack MERN</BoxItem>
+                    <BoxItem>Personalisation de pizzas</BoxItem>
+                    <BoxItem>Calcul dynamique de prix</BoxItem>
+                    <BoxItem>Formulaire "admin" pour l'ajout de pizzas</BoxItem>
+                    <BoxItem>Animations CSS</BoxItem>
+                  </Fade>
                 </BoxContent>
                 <Btn href='https://github.com/PGaujac/pierrza' target='_blank'>
                   Code

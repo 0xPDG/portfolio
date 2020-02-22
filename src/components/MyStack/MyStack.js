@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Browser } from 'styled-icons/octicons';
 import { Server, Tools } from 'styled-icons/fa-solid';
 import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const Wrapper = styled(Container)`
@@ -82,43 +83,49 @@ const MyStack = () => {
     <Wrapper fluid>
       <Row className='justify-content-center align-items-center min-vh-100'>
         <Col lg={4} md={4} sm={4} xs={12}>
-          <Slide left>
+          <Slide bottom>
             <StackBox>
               <BrowserIcon size='50px' />
               <BoxHeading>Front</BoxHeading>
               <BoxContent>
-                <BoxItem>HTML 5</BoxItem>
-                <BoxItem>CSS 3 </BoxItem>
-                <BoxItem>JavaScript</BoxItem>
-                <BoxItem>ReactJS</BoxItem>
+                <Fade delay={300} top cascade>
+                  <BoxItem>HTML 5</BoxItem>
+                  <BoxItem>CSS 3 </BoxItem>
+                  <BoxItem>JavaScript</BoxItem>
+                  <BoxItem>ReactJS</BoxItem>
+                </Fade>
               </BoxContent>
             </StackBox>
           </Slide>
         </Col>
         <Col lg={4} md={4} sm={4} xs={12}>
-          <Slide left>
+          <Slide bottom>
             <StackBox>
               <ServerIcon size='50px' />
               <BoxHeading>Back</BoxHeading>
               <BoxContent>
-                <BoxItem>Node.JS</BoxItem>
-                <BoxItem>Express.JS</BoxItem>
-                <BoxItem>MongoDB</BoxItem>
-                <BoxItem>Mongoose</BoxItem>
+                <Fade delay={300} cascade top>
+                  <BoxItem>Node.JS</BoxItem>
+                  <BoxItem>Express.JS</BoxItem>
+                  <BoxItem>MongoDB</BoxItem>
+                  <BoxItem>Mongoose</BoxItem>
+                </Fade>
               </BoxContent>
             </StackBox>
           </Slide>
         </Col>
         <Col lg={4} md={4} sm={4} xs={12}>
-          <Slide left>
+          <Slide bottom>
             <StackBox>
               <ToolsIcon size='50px' />
               <BoxHeading>Divers</BoxHeading>
               <BoxContent>
-                <BoxItem>Git</BoxItem>
-                <BoxItem>Trello</BoxItem>
-                <BoxItem>Agilité</BoxItem>
-                <BoxItem>Slack </BoxItem>
+                <Fade delay={300} cascade top>
+                  <BoxItem>Git</BoxItem>
+                  <BoxItem>Trello</BoxItem>
+                  <BoxItem>Agilité</BoxItem>
+                  <BoxItem>Slack </BoxItem>
+                </Fade>
               </BoxContent>
             </StackBox>
           </Slide>

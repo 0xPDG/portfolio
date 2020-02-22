@@ -37,7 +37,7 @@ const Presentation = styled.h2`
 
 const Description = styled(Presentation)`
   font-size: 2rem;
-  font-weight: 400;
+  /* font-weight: 400; */
   color: #fff;
   @media (min-width: 320px) and (max-width: 480px) {
     font-size: 1.75rem;
@@ -62,6 +62,7 @@ const Description = styled(Presentation)`
 const Mouse = styled.div`
   margin: 50px auto;
   width: 100px;
+
   @media (min-width: 320px) and (max-width: 480px) {
     display: none;
   }
